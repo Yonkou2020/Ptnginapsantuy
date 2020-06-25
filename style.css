@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Jumbotron */
+#jumbotron {
+    background-image: url(/assets/img/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+h1,
+p {
+    color: black;
+}
+
+/* Section 1 */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* CAROUSEL NEW VILLA */
+.image-new-villa {
+    width: 50%;
+}
