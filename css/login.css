@@ -29,6 +29,7 @@ body{
     left: 50%;
     padding: 5rem;
     border: 1px solid rgb(63, 63, 87);
+    border-radius: 5px;
 }
 .form-group:not(:last-child){
     margin-bottom: 2rem;
