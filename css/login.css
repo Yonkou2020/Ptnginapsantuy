@@ -1,0 +1,109 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+   
+}
+.section{
+
+}
+.form-text{
+    text-align: center;
+}
+.h2{
+    background-image: linear-gradient(to right, rgb(155, 155, 223), rgb(230, 144, 144));
+    -webkit-background-clip: text;
+    color:  transparent;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+}
+.section-form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+.form-group:not(:last-child){
+    margin-bottom: 2rem;
+}
+.form-input{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: rgb(252, 252, 252);
+    border-radius: 2px;
+    display: block;
+    width: 30rem;
+    border-bottom: 3px solid transparent;
+    
+
+}
+.form-input:focus{
+    outline: none;
+    border-bottom: rgb(23, 34, 182) 3px solid;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.11);
+}
+.form-input:focus:invalid{
+    border-bottom: rgb(182, 23, 23) 3px solid;
+}
+.form-input::-webkit-input-placeholder{
+
+}
+.label{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    transition: all .3s;
+}
+.form-input:placeholder-shown + .label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+.button-box{
+    text-align: center;
+    margin-top: 5rem;
+}
+.button:link,
+.button:visited{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+}
+.button:hover{
+    transform: translateY(-.8rem);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.199);
+}
+.button:active{
+    transform: translateY(-.5rem);
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.199);
+}
+.button::after{
+    content:"";
+    border-radius: 10px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all .4s;
+    z-index: -1;
+    background-color:rgb(226, 219, 219);
+}
+.button:hover::after{
+    transform: scale(1.5);
+    opacity: 0;
+}
