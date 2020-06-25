@@ -1,0 +1,116 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sidebar {
+    width: 20%;
+    position: fixed;
+    height: 40vh;
+    z-index: 999;
+    transition: all 0.3s;
+    border-radius: 0 0 20% 0;
+    border-right: 5px solid #17a2b8;
+    padding-left: 3%;
+    background-color: #f1f1f1;
+    
+}
+
+.list {
+    width: calc(100% - 20%);
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;    
+}
+
+#content.active {
+    width: 100%;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386d5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+.show{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    
+}
+/* slide-box */
+.slide-head{
+    width: 100%;
+    text-align: center; 
+    border-top: 0.5vh solid #17a2b8 !important;
+    border-radius: 5% 5% 0 0;
+    padding: 3% 5%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; ;
+    color:floralwhite;
+    
+}
+.slide-head h2{
+    background: rgba(4, 149, 160, 0.5); 
+    width: fit-content;
+    margin: auto;
+    padding: 0 2%;
+}
+.slide-head p{
+    background: rgba(0, 151, 19, 0.5);
+    width: fit-content;
+    margin: auto;
+    padding: 0 2%;
+}
+#gathering .slide-head{
+    background-image: url("/image/meeting-head.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#family .slide-head{
+    background-image: url("/image/family-head.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+#honeymoon .slide-head{
+    background-image: url("/image/honeymoon-head.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.slide-box{
+    width: 30%;
+    margin: 1% 0 2% 2%;
+}
+.carousel-inner{
+    height: 35vh;
+}
+.modal-body ul{
+    padding-left: 10%;
+}
