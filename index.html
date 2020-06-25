@@ -17,6 +17,8 @@
         />
         <!-- Style.css -->
         <link rel="stylesheet" href="style.css" />
+        <!-- Aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
         <title>Booking online</title>
     </head>
@@ -52,12 +54,12 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="./page3.html"
-                            >Project <span class="sr-only">(current)</span></a
+                            >Product <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="./page4.html"
-                            >Hobby <span class="sr-only">(current)</span></a
+                            >Team <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item dropdown">
@@ -106,26 +108,12 @@
         <!-- Jumbotron -->
         <div id="jumbotron" class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Booking online</h1>
-                <p class="lead">
-                    Sewa villa Senyaman Rumah Nenek
-                </p>
+                <h1 class="display-4">Booking Villa</h1>
+                <p class="lead">Sewa villa senyaman rumah Nenek!</p>
             </div>
         </div>
-        <!-- Menu search -->
-        <form id="search-menu" class="form-inline my-2 my-lg-0">
-            <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Search
-            </button>
-        </form>
         <!-- Section 1 -->
-        <section class="section-1">
+        <section data-aos="fade-left" class="section-1">
             <h2>Villa Terbaru</h2>
             <p>
                 Setiap Minggunya kami berusaha menawarkan villa terbaru dengan
@@ -224,7 +212,7 @@
             </div>
         </section>
         <!-- Section 2 -->
-        <section class="section-2 container">
+        <section data-aos="fade-right" class="section-2 container">
             <div class="text-section-2">
                 <h2>Daftar Layanan</h2>
                 <p>
@@ -292,7 +280,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-3">
+        <section data-aos="zoom-in" class="section-3">
             <h2>Daftar Villa</h2>
             <p>
                 Villa kami ada di seluruh indonesia dengan total
@@ -311,11 +299,11 @@
             ></iframe>
         </section>
         <!-- Section-4 -->
-        <section class="section-4">
+        <section data-aos="zoom-out" class="section-4">
             <h2>Daftar menjadi rekan</h2>
             <p>
                 Kami juga terbuka kepada setiap indvidu/group yang ingin
-                bekerjasama dengan kami
+                bekerjasama.
             </p>
             <div class="partner-img">
                 <div class="image-wrap">
@@ -359,6 +347,14 @@
         </section>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1300,
+            });
+        </script>
+        <!-- bootstrap -->
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Pacifico&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 /* Navbar */
 h2 {
-    font-family: "Anton", sans-serif;
+    font-family: "Acme", sans-serif;
 }
 #logo {
     font-family: "Pacifico", cursive;
@@ -34,6 +33,7 @@ a {
 }
 h1,
 p {
+    font-family: "Acme", sans-serif;
     color: black;
 }
 /* search-menu */
