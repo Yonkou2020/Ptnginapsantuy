@@ -82,8 +82,10 @@ p {
     }
     p {
         width: 100%;
-        text-align: justify;
         padding: 10px;
+    }
+    #justify {
+        text-align: justify;
     }
     .image {
         width: 100%;
