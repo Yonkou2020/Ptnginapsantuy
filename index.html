@@ -22,51 +22,83 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+            <div class="logo-head">
+                <h2 id="logo">&lt Rumah Nenek /&gt</h2>
+            </div>
             <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
-                data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Hidden brand</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"
+                        <a class="nav-link" href="./index.html"
                             >Home <span class="sr-only">(current)</span></a
                         >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            class="nav-link disabled"
-                            href="#"
-                            tabindex="-1"
-                            aria-disabled="true"
-                            >Disabled</a
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./page2.html"
+                            >About <span class="sr-only">(current)</span></a
                         >
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./page3.html"
+                            >Project <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./page4.html"
+                            >Hobby <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="./page5.html"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Contact
+                        </a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                        >
+                            <a class="dropdown-item" href="./page5.html"
+                                >Facebook</a
+                            >
+                            <a class="dropdown-item" href="./page5.html"
+                                >Github</a
+                            >
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./page5.html"
+                                >Twitter or Whattsap</a
+                            >
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
-                    <button
-                        class="btn btn-outline-success my-2 my-sm-0"
-                        type="submit"
-                    >
-                        Search
+                    <button id="sign" type="button" class="btn btn-primary">
+                        <a
+                            id="white"
+                            href="https://agus-exercise-5.netlify.app/?"
+                            >Sign In</a
+                        >
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        <a id="white" href="./page5.html">Sign Up</a>
                     </button>
                 </form>
             </div>
@@ -80,6 +112,18 @@
                 </p>
             </div>
         </div>
+        <!-- Menu search -->
+        <form id="search-menu" class="form-inline my-2 my-lg-0">
+            <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
         <!-- Section 1 -->
         <section class="section-1">
             <h2>Villa Terbaru</h2>
@@ -265,6 +309,53 @@
                 aria-hidden="false"
                 tabindex="0"
             ></iframe>
+        </section>
+        <!-- Section-4 -->
+        <section class="section-4">
+            <h2>Daftar menjadi rekan</h2>
+            <p>
+                Kami juga terbuka kepada setiap indvidu/group yang ingin
+                bekerjasama dengan kami
+            </p>
+            <div class="partner-img">
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt1.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt2.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt3.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt4.png" />
+                </div>
+            </div>
+            <div class="partner-img">
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt5.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt6.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt7.png" />
+                </div>
+                <div class="image-wrap">
+                    <img class="image" src="./assets/img/pt8.jpg" />
+                </div>
+            </div>
+
+            <form class="form-inline my-2 my-lg-0">
+                <button id="sign" type="button" class="btn btn-primary">
+                    <a id="white" href="https://agus-exercise-5.netlify.app/?"
+                        >Daftar Mitra group</a
+                    >
+                </button>
+                <button type="button" class="btn btn-success">
+                    <a id="white" href="./page5.html">Daftar mitra Individu</a>
+                </button>
+            </form>
         </section>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

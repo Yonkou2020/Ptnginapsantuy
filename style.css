@@ -1,8 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Navbar */
+h2 {
+    font-family: "Anton", sans-serif;
+}
+#logo {
+    font-family: "Pacifico", cursive;
+    margin-right: 10px;
+    color: rgb(42, 11, 153);
+    font-size: 36px;
+}
+a {
+    color: white;
+}
+#navbar {
+    margin: 20px 40px 0 40px;
+}
+#sign {
+    margin-right: 10px;
+}
+
 /* Jumbotron */
 #jumbotron {
     background-image: url(/assets/img/bg3.jpg);
@@ -14,6 +36,7 @@ h1,
 p {
     color: black;
 }
+/* search-menu */
 
 /* Section 1 */
 .section-1 {
@@ -60,4 +83,26 @@ p {
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
+}
+
+/* Section-4 */
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.partner-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image-wrap {
+    width: 25%;
+    margin: 10px;
+}
+.image {
+    width: 200px;
 }
