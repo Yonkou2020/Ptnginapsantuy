@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Pacifico&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar */
+h2 {
+    font-family: "Acme", sans-serif;
+}
+#logo {
+    font-family: "Pacifico", cursive;
+    margin-right: 10px;
+    color: rgb(42, 11, 153);
+    font-size: 36px;
+}
+a {
+    color: white;
+}
+#navbar {
+    margin: 20px 40px 0 40px;
+}
+#sign {
+    margin-right: 10px;
+}
+
+/* Jumbotron */
+#jumbotron {
+    background-image: url(/assets/img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+h1,
+p {
+    font-family: "Acme", sans-serif;
+    color: black;
+}
