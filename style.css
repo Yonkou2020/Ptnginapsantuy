@@ -21,8 +21,34 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px 0;
 }
 /* CAROUSEL NEW VILLA */
 .image-new-villa {
     width: 50%;
 }
+
+/* Section-2 */
+
+.secton-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.text-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-service {
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    width: 25%;
+    margin-right: 20px;
+}
+/* image card-body */
