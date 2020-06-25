@@ -1,3 +1,4 @@
+/* Form search */
 .two-slide {
     display: flex;
     flex-direction: row;
@@ -5,7 +6,7 @@
     margin-top: 10px;
 }
 
-form {
+#searching {
     width: 50%;
     background-color: rgb(146, 140, 140);
     border-radius: 5px;
@@ -13,7 +14,7 @@ form {
     transition: 0.3s;
     padding: 5px;
 }
-form:hover {
+#searching:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
 }
 .form-group {
