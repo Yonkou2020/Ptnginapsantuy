@@ -302,3 +302,7 @@ footer {
 #two-jumbotron {
     width: 60%;
 }
+
+#btn-transparant:hover {
+    color: black;
+}
