@@ -27,7 +27,7 @@ async function postData() {
         let result = await response.json();
         getAlert()
         setTimeout(function(){
-            location.replace('./index.html')
+            location.replace('./index-welcome.html')
         }, 4000);
         
         
