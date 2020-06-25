@@ -5,10 +5,12 @@ button.addEventListener('click', postData)
 
 async function postData() {
     try {
+        let fullName = document.querySelector('#name').value;
         let email = document.querySelector('#email').value;
         let passWord = document.querySelector('#password').value;
 
         let users = {
+            fullName,
             email,
             passWord
         }
@@ -34,8 +36,8 @@ async function postData() {
  
 function getAlert(){
     Swal.fire({
-    title: 'Welcome Back !',
-    text: '',
+    title: 'Your Email Has Been Registered !',
+    text: 'Thank You',
     icon: 'success',
     confirmButtonText: 'Continue'
   })
