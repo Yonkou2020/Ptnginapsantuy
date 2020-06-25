@@ -34,8 +34,7 @@ a {
     background-repeat: no-repeat;
     height: 500px;
 }
-h1,
-p {
+h1 {
     font-family: "Acme", sans-serif;
     color: black;
 }
