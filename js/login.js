@@ -9,6 +9,17 @@ async function getData(){
         let email = document.querySelector('#email').value;
         let passWord = document.querySelector('#password').value;
 
+
+        if(email.length === 0){
+            Swal.fire({
+                title: 'Email Cant Be Blank ',
+                text: `Log in to your Email`,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+        }
+        else{
+            
         let users = {
             email,
             passWord
@@ -25,6 +36,8 @@ async function getData(){
             return arr.email === email
             
         })
+
+  
         console.log(registeredUsers)
         if(registeredUsers.length > 0){
             Swal.fire({
@@ -40,7 +53,7 @@ async function getData(){
         else{
           
               Swal.fire({
-                title: 'Please Register',
+                title: 'You Dont Have Account',
                 text: `We Will Redirect You To SignUp Page`,
                 icon: 'error',
                 confirmButtonText: 'Continue'
@@ -49,11 +62,14 @@ async function getData(){
                 location.replace('./signup.html')
             }, 4000);
             }
-
+      
                
                 //  }))
     }
+        }
+
     catch(error){
         console.error(error)
     }
 }
+

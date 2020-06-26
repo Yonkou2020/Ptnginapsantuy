@@ -1,5 +1,7 @@
 let button = document.querySelector('.button');
-
+let input = document.querySelector('#password');
+let span = document.querySelector('.span');
+input.addEventListener('input', getter)
 button.addEventListener('click', postData)
 
 
@@ -9,6 +11,33 @@ async function postData() {
         let email = document.querySelector('#email').value;
         let passWord = document.querySelector('#password').value;
 
+        
+        if(email.length === 0){
+            Swal.fire({
+                title: 'Email Cant Be Blank ',
+                text: ``,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+        }
+        else if(fullName.length === 0){
+            Swal.fire({
+                title: 'Please Enter a Name ',
+                text: ``,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+        }
+        else if(passWord.length === 0){
+            Swal.fire({
+                title: 'Password Required',
+                text: ``,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+        }
+        else{
+            
         let users = {
             fullName,
             email,
@@ -51,13 +80,16 @@ async function postData() {
                 let result = await response.json();
                 getAlert()
                 setTimeout(function(){
-                    location.replace('./index.html')
+                    location.replace('./login.html')
                 }, 4000);
                 
     
                    
                      }
         }
+        }
+
+
         catch(error){
             console.error(error)
         }
@@ -67,10 +99,26 @@ async function postData() {
  
 function getAlert(){
     Swal.fire({
-    title: 'Your Email Has Been Registered !',
-    text: 'Thank You',
+    title: 'Your Email Successful Registered !',
+    text: 'Please Activate Your Account',
     icon: 'success',
     confirmButtonText: 'Continue'
   })
+}
+
+function getter(event){
+    let x = event.target.value;
+    if(x.length < 5){
+        span.style.color = 'red' 
+        span.textContent = 'Weak'
+    }
+    else if(x.length >= 6 && x.length <= 12){
+        span.style.color = 'orange'
+        span.textContent = 'Good'
+    }
+    else if(x.length > 12){
+        span.style.color = 'green' 
+        span.textContent = 'Strong'
+    }
 }
 

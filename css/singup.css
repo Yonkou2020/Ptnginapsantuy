@@ -281,6 +281,14 @@ footer {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+.test{
+    padding: 1rem;
+    background-color: rgb(235, 234, 232);
+    font-size: 1.5rem;
+    border-radius: 2px;
+}
+.span{
+}
 
 @media (max-width: 880px) {
     .footer-distributed {
@@ -348,5 +356,4 @@ a {
 .navbar-toggler{
     margin-right: 5rem;
 }
-
 }
