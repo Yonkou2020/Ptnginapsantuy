@@ -17,11 +17,10 @@ body{
     position: fixed;
     height: 40vh;
     transition: all 0.3s;
-    border-right: 1vh solid #17a2b8;
     padding-left: 3%;
-    background-color: #f1f1f1;
     top: 10vh;
     z-index: 1;
+    border-right: 1vh solid #17a2b8 !important;
     
 }
 
@@ -102,18 +101,21 @@ a[aria-expanded="true"] {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 6vh;
 }
 #family .slide-head{
     background-image: url("/image/family-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 6vh;
 }
 #honeymoon .slide-head{
     background-image: url("/image/honeymoon-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
+    margin-top: 6vh;
 }
 .slide-box{
     width: 30%;
@@ -136,4 +138,26 @@ a[aria-expanded="true"] {
     justify-content: space-around;
     flex-wrap: wrap;
 
+}
+
+.checkout-villa{
+    position: relative;
+    height: 100vh;
+    margin: auto;
+    background-color: #17a2b8;
+    top: 10vh;
+    margin: auto;
+    text-align: center;
+    padding-top:20vh;
+}
+
+.checkout{
+    background-color: #f1f1f1;
+    width: 35%;
+    margin: auto;
+    padding: 1% 5%;
+    border-radius: 2vh;
+}
+.checkout button {
+    width: 50%;
 }
