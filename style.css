@@ -337,7 +337,7 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 880px) {
+@media only screen and (max-width: 880px) {
     #jumbotron {
         width: 100%;
     }
@@ -376,7 +376,7 @@ footer {
         padding: 10px;
     }
     .image {
-        width: 100%;
+        width: 80%;
     }
     #hobby2 {
         display: flex;
@@ -387,5 +387,25 @@ footer {
     }
     h1 {
         border: none;
+    }
+    p {
+        padding: 10px;
+    }
+    iframe {
+        width: 80%;
+    }
+    .section-4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form-mitra {
+        display: flex;
+        flex-direction: column;
+    }
+    #button-group {
+        margin-bottom: 10px;
     }
 }
