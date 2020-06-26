@@ -312,7 +312,7 @@ footer {
 .section-3-0 {
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding: 50px 0 20px 0;
 }
 .hobby {
     display: flex;
@@ -334,4 +334,33 @@ footer {
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-family: "Acme";
+}
+
+/* Responsive */
+@media screen and (max-width: 880px) {
+    #jumbotron {
+        width: 100%;
+    }
+    #container-jumbotron {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #two-jumbotron {
+        width: 100%;
+    }
+    #text-jumbotron {
+        width: 100%;
+    }
+    #searcing {
+        width: 100%;
+    }
+    #container-form-search {
+        display: flex;
+        justify-content: center;
+    }
+    #logo {
+        font-size: 16px;
+    }
 }
