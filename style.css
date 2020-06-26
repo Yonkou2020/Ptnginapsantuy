@@ -8,6 +8,9 @@ a:hover {
     text-decoration: none;
     color: black;
 }
+#button-individu {
+    margin-left: 10px;
+}
 body {
     overflow-x: hidden;
 }
