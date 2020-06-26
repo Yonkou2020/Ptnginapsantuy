@@ -24,6 +24,10 @@ async function postData() {
         let response = await fetch(url, options);
         let result = await response.json();
         getAlert()
+        setTimeout(function(){
+            location.replace('./index-welcome.html')
+        }, 4000);
+        
         
         console.log(result)
     } catch (error) {
@@ -40,4 +44,3 @@ function getAlert(){
     confirmButtonText: 'Continue'
   })
 }
-
