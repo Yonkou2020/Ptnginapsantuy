@@ -335,9 +335,12 @@ footer {
     margin-bottom: 20px;
     font-family: "Acme";
 }
+#button-individu {
+    margin-left: 10px;
+}
 
 /* Responsive */
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 950px) {
     #jumbotron {
         width: 100%;
     }
@@ -350,12 +353,13 @@ footer {
     #two-jumbotron {
         width: 100%;
     }
+    #searching {
+        width: 100%;
+    }
     #text-jumbotron {
         width: 100%;
     }
-    #searcing {
-        width: 100%;
-    }
+
     #container-form-search {
         display: flex;
         justify-content: center;
@@ -363,6 +367,7 @@ footer {
     #logo {
         font-size: 16px;
     }
+
     /* why rumah nenek */
     .hobby {
         display: flex;
@@ -403,9 +408,14 @@ footer {
 
     #form-mitra {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
     #button-group {
-        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    /* overflow */
+    body {
+        overflow-x: hidden;
     }
 }
