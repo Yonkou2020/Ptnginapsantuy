@@ -1,10 +1,11 @@
 let button = document.querySelector('.button');
 
-button.addEventListener('click', postData)
+button.addEventListener('click', getData)
 
 
-async function postData() {
-    try {
+async function getData(){
+    try{
+        
         let email = document.querySelector('#email').value;
         let passWord = document.querySelector('#password').value;
 
@@ -14,33 +15,42 @@ async function postData() {
         }
 
         let url = 'https://5ef168f21faf160016b4d5c9.mockapi.io/api/users';
-        let options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(users)
-        }
-        let response = await fetch(url, options);
+
+        let response = await fetch(url);
         let result = await response.json();
-        getAlert()
-        setTimeout(function(){
-            location.replace('./index-welcome.html')
-        }, 4000);
-        
-        
         console.log(result)
-    } catch (error) {
+
+
+        let registeredUsers = result.filter(arr =>{
+            return arr.email === email
+            
+        })
+        console.log(registeredUsers)
+        if(registeredUsers.length > 0){
+            Swal.fire({
+                title: 'You Already Registered',
+                text: `Welcome ${registeredUsers[0].fullName}`,
+                icon: 'success',
+                confirmButtonText: 'Continue'
+              })
+            }
+        else{
+          
+              Swal.fire({
+                title: 'Please Register',
+                text: `We Will Redirect You To SignUp Page`,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+              setTimeout(function(){
+                location.replace('./signup.html')
+            }, 4000);
+            }
+
+               
+                //  }))
+    }
+    catch(error){
         console.error(error)
     }
-}
-
- 
-function getAlert(){
-    Swal.fire({
-    title: 'Welcome Back !',
-    text: '',
-    icon: 'success',
-    confirmButtonText: 'Continue'
-  })
 }
