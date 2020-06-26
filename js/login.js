@@ -1,46 +1,69 @@
-let button = document.querySelector('.button');
+// fitur terbaru
+let button = document.querySelector(".button");
 
-button.addEventListener('click', postData)
+button.addEventListener("click", getData);
 
-
-async function postData() {
+async function getData() {
     try {
-        let email = document.querySelector('#email').value;
-        let passWord = document.querySelector('#password').value;
+        let email = document.querySelector("#email").value;
+        let passWord = document.querySelector("#password").value;
 
-        let users = {
-            email,
-            passWord
-        }
+        if (email.length === 0) {
+            Swal.fire({
+                title: "Email Cant Be Blank ",
+                text: `Log in to your Email`,
+                icon: "error",
+                confirmButtonText: "Continue",
+            });
+        } else if (passWord.length === 0) {
+            Swal.fire({
+                title: "Wrong Password ",
+                text: ``,
+                icon: "error",
+                confirmButtonText: "Continue",
+            });
+        } else {
+            let users = {
+                email,
+                passWord,
+            };
 
-        let url = 'https://5ef168f21faf160016b4d5c9.mockapi.io/api/users';
-        let options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(users)
+            let url = "https://5ef168f21faf160016b4d5c9.mockapi.io/api/users";
+
+            let response = await fetch(url);
+            let result = await response.json();
+            console.log(result);
+
+            let registeredUsers = result.filter((arr) => {
+                return arr.email === email;
+            });
+
+            console.log(registeredUsers);
+            if (registeredUsers.length > 0) {
+                Swal.fire({
+                    title: "You Already Registered",
+                    text: `Welcome ${registeredUsers[0].fullName}`,
+                    icon: "success",
+                    confirmButtonText: "Continue",
+                });
+                setTimeout(function () {
+                    location.replace("./index.html");
+                }, 4000);
+            } else {
+                Swal.fire({
+                    title: "You Dont Have Account",
+                    text: `We Will Redirect You To SignUp Page`,
+                    icon: "error",
+                    confirmButtonText: "Continue",
+                });
+                setTimeout(function () {
+                    location.replace("./signup.html");
+                }, 4000);
+            }
+
+            //  }))
         }
-        let response = await fetch(url, options);
-        let result = await response.json();
-        getAlert()
-        setTimeout(function(){
-            location.replace('./index-welcome.html')
-        }, 4000);
-        
-        
-        console.log(result)
     } catch (error) {
-        console.error(error)
+        console.error(error);
     }
-}
-
- 
-function getAlert(){
-    Swal.fire({
-    title: 'Welcome Back !',
-    text: '',
-    icon: 'success',
-    confirmButtonText: 'Continue'
-  })
 }
