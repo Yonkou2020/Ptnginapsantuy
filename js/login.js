@@ -18,6 +18,14 @@ async function getData(){
                 confirmButtonText: 'Continue'
               })
         }
+        else if(passWord.length === 0){
+            Swal.fire({
+                title: 'Wrong Password ',
+                text: ``,
+                icon: 'error',
+                confirmButtonText: 'Continue'
+              })
+        }
         else{
             
         let users = {
