@@ -30,7 +30,7 @@ h2 {
 #sidebar {
     width: 20%;
     position: fixed;
-    height: 40vh;
+    height: 100vh;
     z-index: 999;
     transition: all 0.3s;
     border-radius: 0 0 20% 0;
