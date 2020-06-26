@@ -363,4 +363,29 @@ footer {
     #logo {
         font-size: 16px;
     }
+    /* why rumah nenek */
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #justify {
+        text-align: justify;
+        width: 100%;
+        padding: 10px;
+    }
+    .image {
+        width: 100%;
+    }
+    #hobby2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #logo {
+        font-size: 14px;
+    }
+    h1 {
+        border: none;
+    }
 }
