@@ -33,6 +33,9 @@ async function getData(){
                 icon: 'success',
                 confirmButtonText: 'Continue'
               })
+              setTimeout(function(){
+                location.replace('./index.html')
+            }, 4000);
             }
         else{
           
