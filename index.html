@@ -59,7 +59,7 @@
                         >
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/list-villa.html"
+                        <a class="nav-link" href="list-villa.html"
                             >Product <span class="sr-only">(current)</span></a
                         >
                     </li>
@@ -109,9 +109,117 @@
         </nav>
         <!-- Jumbotron -->
         <div id="jumbotron" class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Booking Villa</h1>
-                <p class="lead">Sewa villa senyaman rumah Nenek!</p>
+            <div id="container-jumbotron" class="container">
+                <div id="text-jumbotron">
+                    <h1 class="display-4">Booking Villa</h1>
+                    <p class="lead">Sewa villa senyaman rumah Nenek!</p>
+                </div>
+                <!-- form -->
+                <div id="two-jumbotron">
+                    <div class="container">
+                        <form id="searching">
+                            <legend>Pencarian:</legend>
+                            <label for="loc">
+                                Nama Lokasi/Villa Tujuan
+                            </label>
+                            <div id="loc" class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span
+                                        class="input-group-text"
+                                        id="addon-wrapping"
+                                    >
+                                        <i
+                                            class="fa fa-map-marker"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></span>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Villa Nenek"
+                                    aria-label="Username"
+                                    aria-describedby="addon-wrapping"
+                                />
+                            </div>
+                            <div class="two-slide">
+                                <div class="form-group">
+                                    <label for="sel1"
+                                        ><span
+                                            ><i
+                                                class="fa fa-users"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></span>
+                                        Jumlah Tamu:
+                                    </label>
+                                    <select class="form-control" id="sel1">
+                                        <option>1 Tamu</option>
+                                        <option>2 Tamu</option>
+                                        <option>3 Tamu</option>
+                                        <option>4 Tamu</option>
+                                        <option>5 Tamu</option>
+                                        <option>6 Tamu</option>
+                                        <option>7 Tamu</option>
+                                        <option>8 Tamu</option>
+                                        <option>9 Tamu</option>
+                                        <option>10 Tamu</option>
+                                        <option>11 Tamu</option>
+                                        <option>12 Tamu</option>
+                                        <option>13 Tamu</option>
+                                        <option>14 Tamu</option>
+                                        <option>15 Tamu</option>
+                                        <option>16 Tamu</option>
+                                    </select>
+                                </div>
+                                <!-- section2 -->
+                                <div class="form-group">
+                                    <label for="sel2"
+                                        ><span
+                                            ><i
+                                                class="fa fa-bed"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </span>
+                                        Jumlah Kamar:</label
+                                    >
+                                    <select class="form-control" id="sel2">
+                                        <option>1 Kamar</option>
+                                        <option>2 Kamar</option>
+                                        <option>3 Kamar</option>
+                                        <option>4 Kamar</option>
+                                        <option>5 Kamar</option>
+                                        <option>6 Kamar</option>
+                                        <option>7 Kamar</option>
+                                        <option>8 Kamar</option>
+                                        <option>9 Kamar</option>
+                                        <option>10 Kamar</option>
+                                        <option>11 Kamar</option>
+                                        <option>12 Kamar</option>
+                                        <option>13 Kamar</option>
+                                        <option>14 Kamar</option>
+                                        <option>15 Kamar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- section3 -->
+                            <a
+                                id="btn-transparant"
+                                href="#"
+                                class="btn btn-primary btn-lg active"
+                                role="button"
+                                aria-pressed="true"
+                                ><span
+                                    ><i
+                                        class="fa fa-search"
+                                        aria-hidden="true"
+                                    ></i> </span
+                                >Search</a
+                            >
+                        </form>
+                    </div>
+                </div>
+                <!-- search batas -->
             </div>
         </div>
         <!-- Section 1 -->
@@ -363,7 +471,9 @@
                     <a href="#">Contact</a>
                 </p>
 
-                <p class="footer-company-name">RumahNenek &copy; 2020</p>
+                <p class="footer-company-name">
+                    RumahNenek &copy; 2020, Impact Byte
+                </p>
             </div>
 
             <div class="footer-center">

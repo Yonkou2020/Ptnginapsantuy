@@ -1,11 +1,32 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+/* Navbar */
+h2 {
+    font-family: "Acme";
+}
+#logo {
+    font-family: "Pacifico", cursive;
+    margin-right: 10px;
+    color: rgb(42, 11, 153);
+    font-size: 36px;
+}
+#white {
+    color: white;
+}
+#navbar {
+    margin: 20px 40px 0 40px;
+}
+#sign {
+    margin-right: 10px;
+}
+
 #sidebar {
     width: 20%;
     position: fixed;
@@ -16,14 +37,13 @@ body{
     border-right: 5px solid #17a2b8;
     padding-left: 3%;
     background-color: #f1f1f1;
-    
 }
 
 .list {
     width: calc(100% - 20%);
     transition: all 0.3s;
     position: absolute;
-    right: 0;    
+    right: 0;
 }
 
 #content.active {
@@ -57,60 +77,58 @@ a[aria-expanded="true"] {
     background: #6d7fcc;
 }
 
-.show{
+.show {
     display: flex;
     flex-wrap: wrap;
     padding: 3%;
-    
 }
 /* slide-box */
-.slide-head{
+.slide-head {
     width: 100%;
-    text-align: center; 
+    text-align: center;
     border-top: 0.5vh solid #17a2b8 !important;
     border-radius: 5% 5% 0 0;
     padding: 3% 5%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; ;
-    color:floralwhite;
-    
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    color: floralwhite;
 }
-.slide-head h2{
-    background: rgba(4, 149, 160, 0.5); 
+.slide-head h2 {
+    background: rgba(4, 149, 160, 0.5);
     width: fit-content;
     margin: auto;
     padding: 0 2%;
 }
-.slide-head p{
+.slide-head p {
     background: rgba(0, 151, 19, 0.5);
     width: fit-content;
     margin: auto;
     padding: 0 2%;
 }
-#gathering .slide-head{
+#gathering .slide-head {
     background-image: url("/image/meeting-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-#family .slide-head{
+#family .slide-head {
     background-image: url("/image/family-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
 }
-#honeymoon .slide-head{
+#honeymoon .slide-head {
     background-image: url("/image/honeymoon-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
 }
-.slide-box{
+.slide-box {
     width: 30%;
     margin: 1% 0 2% 2%;
 }
-.carousel-inner{
+.carousel-inner {
     height: 35vh;
 }
-.modal-body ul{
+.modal-body ul {
     padding-left: 10%;
 }

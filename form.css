@@ -1,0 +1,21 @@
+/* Form search */
+.two-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#searching {
+    width: 50%;
+    background-color: rgba(247, 239, 239, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 5px;
+}
+#searching:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+}
+.form-group {
+    width: 45%;
+}
