@@ -299,4 +299,54 @@ footer {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+.h2{
+    background-image: linear-gradient(to right, rgb(155, 155, 223), rgb(230, 144, 144));
+    -webkit-background-clip: text;
+    color:  transparent;
+    font-size: 2.5rem;
+    margin-bottom: 8rem;
+}
+.section-form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 72.3%;
+    left: 50%;
+    padding: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.appear,
+.appear:active,
+.appear:hover{
+    color: rgb(134, 60, 134);
+    text-decoration: none !important;
+
+}
+.btn{
+    display: none;
+}
+h2 {
+    font-family: "Acme", sans-serif;
+}
+#logo {
+    font-family: "Pacifico", cursive;
+    margin-right: 0;
+    color: rgb(42, 11, 153);
+    font-size: 30px;
+}
+a {
+    color: white;
+    font-size: 1rem;
+}
+#navbar {
+    margin: 2rem 3rem 0 5rem;
+}
+#sign {
+    margin-right: 10px;
+}
+.navbar-toggler{
+    margin-right: 5rem;
+}
+
 }
