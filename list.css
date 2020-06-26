@@ -6,17 +6,27 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color:#fff;
+    z-index: 1;
+}
 #sidebar {
     width: 20%;
     position: fixed;
     height: 40vh;
-    z-index: 999;
     transition: all 0.3s;
-    border-radius: 0 0 20% 0;
     border-right: 1vh solid #17a2b8;
     padding-left: 3%;
     background-color: #f1f1f1;
+    top: 10vh;
+    z-index: 1;
     
+}
+
+.row{
+    width: 20%;
 }
 
 .list {
@@ -24,6 +34,7 @@ body{
     transition: all 0.5s;
     position: absolute;
     right: 0;    
+    top: 8vh;
 }
 
 #content.active {
@@ -67,11 +78,11 @@ a[aria-expanded="true"] {
 .slide-head{
     width: 100%;
     text-align: center; 
-    border-top: 0.5vh solid #17a2b8 !important;
-    border-radius: 5% 5% 0 0;
+    border-bottom: 1vh solid #17a2b8 !important;
     padding: 3% 5%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; ;
     color:floralwhite;
+    height: 30vh;
     
 }
 .slide-head h2{
@@ -87,26 +98,26 @@ a[aria-expanded="true"] {
     padding: 0 2%;
 }
 #gathering .slide-head{
-    background-image: url("/Ptnginapsantuy/image/meeting-head.jpg");
+    background-image: url("/image/meeting-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #family .slide-head{
-    background-image: url("/Ptnginapsantuy/image/family-head.jpg");
+    background-image: url("/image/family-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #honeymoon .slide-head{
-    background-image: url("/Ptnginapsantuy/image/honeymoon-head.jpg");
+    background-image: url("/image/honeymoon-head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
 }
 .slide-box{
     width: 30%;
-    margin: 1% 0 2% 2%;
+    margin: 1%;
 }
 .carousel-inner{
     height: 35vh;
@@ -118,4 +129,11 @@ a[aria-expanded="true"] {
 }
 .modal-body ul{
     padding-left: 10%;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
