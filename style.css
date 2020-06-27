@@ -36,7 +36,7 @@ a {
 
 /* Jumbotron */
 #jumbotron {
-    background-image: url(/assets/img/bg3.jpg);
+    background-image: url(./assets/img/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
