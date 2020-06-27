@@ -65,14 +65,14 @@
                         >
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="./page4.html"
+                        <a class="nav-link" href="./team.html"
                             >Team <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
-                            href="./page5.html"
+                            href="#"
                             id="navbarDropdown"
                             role="button"
                             data-toggle="dropdown"
@@ -85,15 +85,19 @@
                             class="dropdown-menu"
                             aria-labelledby="navbarDropdown"
                         >
-                            <a class="dropdown-item" href="./page5.html"
+                            <a
+                                class="dropdown-item"
+                                href="https://web.facebook.com/"
                                 >Facebook</a
                             >
-                            <a class="dropdown-item" href="./page5.html"
+                            <a
+                                class="dropdown-item"
+                                href="https://github.com/Yonkou2020"
                                 >Github</a
                             >
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./page5.html"
-                                >Twitter or Whattsap</a
+                            <a class="dropdown-item" href="https://twitter.com/"
+                                >Twitter</a
                             >
                         </div>
                     </li>
@@ -118,7 +122,7 @@
                 </div>
                 <!-- form -->
                 <div id="two-jumbotron">
-                    <div class="container">
+                    <div id="container-form-search" class="container">
                         <form id="searching">
                             <legend>Pencarian:</legend>
                             <label for="loc">
@@ -512,14 +516,14 @@
                 </div>
             </div>
 
-            <form class="form-inline my-2 my-lg-0">
-                <button id="sign" type="button" class="btn btn-primary">
-                    <a id="white" href="https://agus-exercise-5.netlify.app/?"
+            <form id="form-mitra" class="form-inline my-2 my-lg-0">
+                <button id="button-group" type="button" class="btn btn-primary">
+                    <a id="white" href="./signup.html"
                         >Daftar Mitra group</a
                     >
                 </button>
-                <button type="button" class="btn btn-success">
-                    <a id="white" href="./page5.html">Daftar mitra Individu</a>
+                <button id="button-individu" type="button" class="btn btn-success">
+                    <a id="white" href="signup.html">Daftar mitra Individu</a>
                 </button>
             </form>
         </section>
@@ -589,6 +593,8 @@
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!-- aos js -->
+        <script src="welcome.js"></script>
+        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
@@ -612,5 +618,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="./js/login.js"></script>
+        
     </body>
 </html>

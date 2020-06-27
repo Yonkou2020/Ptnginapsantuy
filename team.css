@@ -31,88 +31,6 @@ a {
     margin-right: 10px;
 }
 
-/* Jumbotron */
-#jumbotron {
-    background-image: url(/assets/img/bg3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-}
-h1 {
-    font-family: "Acme", sans-serif;
-    color: black;
-}
-/* search-menu */
-
-/* Section 1 */
-.section-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-}
-/* CAROUSEL NEW VILLA */
-.image-new-villa {
-    width: 50%;
-}
-
-/* Section-2 */
-
-.section-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-}
-.text-section-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-/* Section-3 */
-.section-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-}
-
-/* Section-4 */
-
-.section-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-}
-.partner-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.image-wrap {
-    width: 25%;
-    margin: 10px;
-}
-.image {
-    width: 200px;
-}
-
 /* Footer */
 
 footer {
@@ -271,115 +189,30 @@ footer {
         margin-left: 0;
     }
 }
+/* sect card*/
 
-/* /* Form search */
-.two-slide {
+/* Section-2 */
+
+.section-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
 }
-
-#searching {
-    width: 50%;
-    background-color: rgba(255, 254, 254, 0.1);
-    border-radius: 5px;
+.text-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    padding: 5px;
-}
-#searching:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
-}
-.form-group {
-    width: 45%;
-}
-#container-jumbotron {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#two-jumbotron {
-    width: 60%;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
-#btn-transparant:hover {
-    color: black;
-}
-
-/* tambahan section3-0 */
-/*  container*/
-.section-3-0 {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 0;
-}
-.hobby {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-}
-.image-why {
-    width: 40%;
-}
-#why-rumah-nenek {
-    width: 350px;
-    padding: 50px;
-}
-#justify {
-    width: 56%;
-}
-#head-h2 {
-    text-align: center;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-family: "Acme";
-}
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-#myDiv {
-    display: none;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-}
-.whole {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.486);
-    display: block;
-    position: fixed;
-    z-index: 9999;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
