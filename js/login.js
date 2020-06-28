@@ -180,13 +180,11 @@ async function getData() {
 
             let response = await fetch(url);
             let result = await response.json();
-            console.log(result);
 
             let registeredUsers = result.filter((arr) => {
                 return arr.email === email;
             });
 
-            console.log(registeredUsers);
             if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
                 Swal.fire({
                     title: "You Already Registered",
