@@ -174,16 +174,10 @@ a[aria-expanded="true"] {
 /* Responsive */
 @media only screen and (max-width: 950px) {
     #sidebar {
-        width: 20%;
-        position: fixed;
-        height: 100%;
-        transition: all 0.3s;
-        top: 10vh;
-        z-index: 1;
-        border-right: 1vh solid #17a2b8 !important;
+        margin-left: -250px;
     }
     .list {
-        width: calc(100% - 20%);
+        width: 100%;
         transition: all 0.5s;
         position: absolute;
         right: 0;
@@ -199,6 +193,6 @@ a[aria-expanded="true"] {
         font-size: 16px;
     }
     h5 {
-        font-size: 10px;
+        font-size: 1px;
     }
 }
