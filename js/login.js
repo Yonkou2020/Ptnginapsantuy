@@ -48,7 +48,7 @@ async function getData() {
                     location.replace("./index.html");
                 }, 4000);
             } 
-            else if(passWord !== registeredUsers[0].passWord && registeredUsers.length == 0){
+            else if(registeredUsers.length > 0 && passWord !== registeredUsers[0].passWord){
                 Swal.fire({
                     title: "Wrong Password",
                     text: `Try Again`,
