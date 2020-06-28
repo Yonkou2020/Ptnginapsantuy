@@ -25,7 +25,11 @@ a {
     color: white;
 }
 #navbar {
-    margin: 20px 40px 0 40px;
+    padding: 20px 40px 0 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 #sign {
     margin-right: 10px;
@@ -198,7 +202,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 150px 0 100px 0;
 }
 .text-section-2 {
     display: flex;
