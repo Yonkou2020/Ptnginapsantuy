@@ -25,11 +25,7 @@ a {
     color: white;
 }
 #navbar {
-    padding: 20px 40px 0 40px;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    background-color: white;
+    margin: 20px 40px 0 40px;
 }
 #sign {
     margin-right: 10px;
