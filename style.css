@@ -36,7 +36,7 @@ a {
 
 /* Jumbotron */
 #jumbotron {
-    background-image: url(./assets/img/bg2.jpg);
+    background-image: url(https://image.freepik.com/free-vector/gradient-geometric-shape-background_78532-374.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -285,11 +285,12 @@ footer {
 
 #searching {
     width: 50%;
-    background-color: rgba(255, 254, 254, 0.1);
+    background-color: rgba(255, 254, 254);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    padding: 5px;
+    padding: 20px;
+    margin-top: 100px;
 }
 #searching:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
