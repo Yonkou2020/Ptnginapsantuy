@@ -19,8 +19,13 @@ h2 {
 a {
     color: white;
 }
+
 #navbar {
-    margin: 20px 40px 0 40px;
+    padding: 20px 40px 0 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 #sign {
     margin-right: 10px;
@@ -31,7 +36,8 @@ a {
     background-image: url(./image/honeymoon-head.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
+    padding: 100px 0;
 }
 p {
     font-family: sans-serif;
