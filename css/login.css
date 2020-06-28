@@ -6,6 +6,12 @@ html {
     padding: 0;
     margin: 0;
 }
+.link-home,
+.link-home:link,
+.link-home:visited{
+    font-size: 2rem;
+    text-decoration: none !important;
+}
 body {
     box-sizing: border-box;
 }

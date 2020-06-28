@@ -281,21 +281,13 @@ footer {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-<<<<<<< HEAD
 .test{
-=======
-.test {
->>>>>>> 843f1159a2bd74e9d4be05077d69d98e994708d9
     padding: 1rem;
     background-color: rgb(235, 234, 232);
     font-size: 1.5rem;
     border-radius: 2px;
 }
-<<<<<<< HEAD
 .span{
-=======
-.span {
->>>>>>> 843f1159a2bd74e9d4be05077d69d98e994708d9
 }
 
 @media (max-width: 880px) {
@@ -368,7 +360,6 @@ footer {
         margin-right: 5rem;
     }
 }
-<<<<<<< HEAD
 .btn{
     display: none;
 }
@@ -394,6 +385,3 @@ a {
 .navbar-toggler{
     margin-right: 5rem;
 }
-}
-=======
->>>>>>> 843f1159a2bd74e9d4be05077d69d98e994708d9

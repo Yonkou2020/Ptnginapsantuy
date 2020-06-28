@@ -31,3 +31,4 @@ function backDrop() {
         location.replace("./list-villa.html");
     }, 2000);
 }
+
