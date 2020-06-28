@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Pacifico&display=swap");
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +9,12 @@
 #sign {
     margin-right: 10px;
 }
+#logo {
+    font-family: "Pacifico", cursive;
+    margin-right: 10px;
+    color: rgb(42, 11, 153);
+    font-size: 36px;
+}
 body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -17,11 +24,12 @@ body {
     width: 100%;
     background-color: #fff;
     z-index: 1;
+    padding: 20px 40px 0 40px;
 }
 #sidebar {
     width: 20%;
     position: fixed;
-    height: 40vh;
+    height: 100vh;
     transition: all 0.3s;
     padding-left: 3%;
     top: 10vh;
@@ -162,4 +170,30 @@ a[aria-expanded="true"] {
 }
 .checkout button {
     width: 50%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    .list {
+        width: 100%;
+        transition: all 0.5s;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+    }
+    .slide-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    #logo {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 1px;
+    }
 }

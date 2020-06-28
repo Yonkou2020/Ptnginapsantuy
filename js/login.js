@@ -66,7 +66,7 @@ async function getData(){
                     confirmButtonText: 'Continue'
                   })
             }
-        else{
+        else if(registeredUsers.length === null){
           Swal.fire({
                 title: 'You Dont Have Account',
                 text: `We Will Redirect You To SignUp Page`,

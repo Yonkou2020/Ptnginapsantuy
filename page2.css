@@ -19,6 +19,7 @@ h2 {
 a {
     color: white;
 }
+
 #navbar {
     margin: 20px 40px 0 40px;
 }
@@ -28,10 +29,10 @@ a {
 
 /* Jumbotron */
 #jumbotron {
-    background-image: url(./image/honeymoon-head.jpg);
+    background-image: url(https://image.freepik.com/free-vector/gradient-geometric-shape-background_78532-374.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
 }
 p {
     font-family: sans-serif;
@@ -39,8 +40,7 @@ p {
 }
 #head-h1 {
     font-family: "bitter";
-    color: rgb(8, 6, 6);
-    background-color: rgba(253, 98, 176, 0.6);
+    color: rgb(252, 252, 252);
     text-align: center;
 }
 
