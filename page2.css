@@ -21,11 +21,7 @@ a {
 }
 
 #navbar {
-    padding: 20px 40px 0 40px;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    background-color: white;
+    margin: 20px 40px 0 40px;
 }
 #sign {
     margin-right: 10px;
@@ -37,7 +33,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    padding: 100px 0;
 }
 p {
     font-family: sans-serif;
