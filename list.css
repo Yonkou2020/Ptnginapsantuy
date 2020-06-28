@@ -24,11 +24,12 @@ body {
     width: 100%;
     background-color: #fff;
     z-index: 1;
+    padding: 20px 40px 0 40px;
 }
 #sidebar {
     width: 20%;
     position: fixed;
-    height: 40vh;
+    height: 100vh;
     transition: all 0.3s;
     padding-left: 3%;
     top: 10vh;
