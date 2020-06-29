@@ -1,5 +1,7 @@
+window.onload = checker
 let myVar;
 let wholeBody = document.createElement("div");
+let h3 = document.querySelector('.h3')
 
 let loader = document.createElement("div");
 let navi = document.querySelector(".whole-body");
@@ -19,10 +21,17 @@ function showPage() {
     document.querySelector(".whole").style.display = "block";
 }
 
+function checker(){
+    let userLogin = JSON.parse(localStorage.getItem('users'))
+    h3.innerHTML = `Welcome, ${userLogin.fullName}`
+}
+
 {
     /* <div class="whole"><div id="loader"></div></div>
      */
 }
+
+
 
 function backDrop() {
     let input = document.querySelector('.form-control').value;

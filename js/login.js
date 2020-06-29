@@ -43,11 +43,11 @@ async function getData() {
                 return arr.email === email;
             });
 
-            localStorage.setItem('Users', registeredUsers[0].fullName)
+          
             
         
             if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
-                localStorage.setItem('users', JSON.stringify(registeredUsers[0].fullName))
+                localStorage.setItem('users', JSON.stringify(registeredUsers[0]))
                 Swal.fire({
                     title: `Welcome Back ${registeredUsers[0].fullName}`,
                     text: ``,
@@ -55,7 +55,7 @@ async function getData() {
                     confirmButtonText: "Continue",
                 });
                 setTimeout(function () {
-                    location.replace("./index.html");
+                    location.replace("./new-index.html");
                 }, 4000);
             } 
             else if(registeredUsers.length > 0 && passWord !== registeredUsers[0].passWord || passWord == undefined ){
