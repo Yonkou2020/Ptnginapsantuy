@@ -55,7 +55,7 @@ async function getData() {
                     confirmButtonText: "Continue",
                 });
                 setTimeout(function () {
-                    location.replace("./new-index.html");
+                    location.replace("./index.html");
                 }, 4000);
             } 
             else if(registeredUsers.length > 0 && passWord !== registeredUsers[0].passWord || passWord == undefined ){
