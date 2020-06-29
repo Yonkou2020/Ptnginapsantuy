@@ -1,8 +1,14 @@
 let button = document.querySelector(".button");
+let enter = document.querySelector(".section-form")
 let input = document.querySelector("#password");
 let span = document.querySelector(".span");
 input.addEventListener("input", getter);
 button.addEventListener("click", postData);
+enter.addEventListener('keypress', function(e){
+    if (e.key === 'Enter') {
+        postData()
+      }
+});
 
 async function postData() {
     try {
