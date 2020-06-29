@@ -31,14 +31,13 @@ async function getData() {
 
             let response = await fetch(url);
             let result = await response.json();
-            console.log(result);
-
+           
             let registeredUsers = result.filter((arr) => {
                 return arr.email === email;
             });
 
-            console.log(registeredUsers);
-            if (registeredUsers.length > 0) {
+        
+            if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
                 Swal.fire({
                     title: "You Already Registered",
                     text: `Welcome ${registeredUsers[0].fullName}`,
@@ -48,6 +47,14 @@ async function getData() {
                 setTimeout(function () {
                     location.replace("./index.html");
                 }, 4000);
+            } 
+            else if(registeredUsers.length > 0 && passWord !== registeredUsers[0].passWord || passWord == undefined ){
+                Swal.fire({
+                    title: "Wrong Password",
+                    text: `Try Again`,
+                    icon: "error",
+                    confirmButtonText: "Continue",
+                });
             } else {
                 Swal.fire({
                     title: "You Dont Have Account",
