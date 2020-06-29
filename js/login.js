@@ -1,6 +1,13 @@
 let button = document.querySelector(".button");
+let enter = document.querySelector(".section-form")
 
+enter.addEventListener('keypress', function(e){
+    if (e.key === 'Enter') {
+        getData()
+      }
+});
 button.addEventListener("click", getData);
+
 
 async function getData() {
     try {
@@ -39,8 +46,8 @@ async function getData() {
         
             if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
                 Swal.fire({
-                    title: "You Already Registered",
-                    text: `Welcome ${registeredUsers[0].fullName}`,
+                    title: `Welcome Back ${registeredUsers[0].fullName}`,
+                    text: ``,
                     icon: "success",
                     confirmButtonText: "Continue",
                 });
@@ -71,5 +78,12 @@ async function getData() {
         }
     } catch (error) {
         console.error(error);
+    }
+}
+
+
+function getDataEnter(e) {
+    if (e.key === 'Enter') {
+      getData()
     }
 }
