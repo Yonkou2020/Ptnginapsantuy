@@ -12,7 +12,7 @@ button.addEventListener("click", getData);
 async function getData() {
     try {
         let email = document.querySelector("#email").value;
-        let passWord = document.querySelector("#password").value;
+        let password = document.querySelector("#password").value;
 
         if (email.length === 0) {
             Swal.fire({
@@ -31,7 +31,7 @@ async function getData() {
         } else {
             let users = {
                 email,
-                passWord,
+                password,
             };
 
             let url = "https://5ef168f21faf160016b4d5c9.mockapi.io/api/users";
@@ -43,6 +43,8 @@ async function getData() {
                 return arr.email === email;
             });
 
+            localStorage.setItem('Users', registeredUsers[0].fullName)
+            
         
             if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
                 Swal.fire({

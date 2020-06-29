@@ -1,5 +1,6 @@
 let myVar;
 let wholeBody = document.createElement("div");
+
 let loader = document.createElement("div");
 let navi = document.querySelector(".whole-body");
 wholeBody.setAttribute("class", "whole");
@@ -24,10 +25,16 @@ function showPage() {
 }
 
 function backDrop() {
+    let input = document.querySelector('.form-control').value;
+    if(input.length === 0){
+        alert('fill')
+    }
+    else{
     wholeBody.appendChild(loader);
     console.log(wholeBody);
     navi.appendChild(wholeBody);
     setTimeout(() => {
         location.replace("./list-villa.html");
     }, 2000);
+}
 }
