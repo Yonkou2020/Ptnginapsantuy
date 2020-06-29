@@ -47,6 +47,7 @@ async function getData() {
             
         
             if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
+                localStorage.setItem('users', JSON.stringify(registeredUsers[0].fullName))
                 Swal.fire({
                     title: `Welcome Back ${registeredUsers[0].fullName}`,
                     text: ``,

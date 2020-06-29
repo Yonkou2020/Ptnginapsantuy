@@ -27,7 +27,12 @@ function showPage() {
 function backDrop() {
     let input = document.querySelector('.form-control').value;
     if(input.length === 0){
-        alert('fill')
+        Swal.fire({
+            title: "Please Fill Search Input",
+            text: ``,
+            icon: "error",
+            confirmButtonText: "Continue",
+        });
     }
     else{
     wholeBody.appendChild(loader);
