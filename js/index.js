@@ -1,6 +1,11 @@
 let header = document.querySelector('nav');
 let signInBtn = document.getElementById('signIn');
 let signUpBtn = document.getElementById('signUp');
+let logOut = document.querySelector('.log-out');
+function logout(){
+    localStorage.clear();
+    location.reload()
+}
 
 window.onload = checkHeader();
 
@@ -36,7 +41,10 @@ function checkHeader() {
 
         header.appendChild(nameSpan);
         header.appendChild(logoutBtn);
+        logoutBtn.addEventListener('click', logout)
     }
+
+      
 }
 
 function myFunction() {
