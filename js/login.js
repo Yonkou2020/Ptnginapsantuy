@@ -21,7 +21,7 @@ async function getData() {
                 icon: "error",
                 confirmButtonText: "Continue",
             });
-        } else if (passWord.length === 0) {
+        } else if (password.length === 0) {
             Swal.fire({
                 title: "Wrong Password ",
                 text: ``,
@@ -46,7 +46,7 @@ async function getData() {
             localStorage.setItem('Users', registeredUsers[0].fullName)
             
         
-            if (registeredUsers.length > 0 && registeredUsers[0].passWord === passWord) {
+            if (registeredUsers.length > 0 && registeredUsers[0].password === password) {
                 Swal.fire({
                     title: `Welcome Back ${registeredUsers[0].fullName}`,
                     text: ``,
@@ -57,7 +57,7 @@ async function getData() {
                     location.replace("./index.html");
                 }, 4000);
             } 
-            else if(registeredUsers.length > 0 && passWord !== registeredUsers[0].passWord || passWord == undefined ){
+            else if(registeredUsers.length > 0 && password !== registeredUsers[0].password || password == undefined ){
                 Swal.fire({
                     title: "Wrong Password",
                     text: `Try Again`,
