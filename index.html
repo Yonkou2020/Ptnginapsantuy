@@ -69,7 +69,7 @@
                             >Team <span class="sr-only">(current)</span></a
                         >
                     </li>
-                    <li class="nav-item dropdown">
+                    <li id='contact' class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
                             href="#"
@@ -97,89 +97,89 @@
                             >
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="https://twitter.com/"
-                                >Twitter</a
-                            >
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <button id="sign" type="button" class="btn btn-primary">
-                        <a id="white" href="login.html">Sign In</a>
-                    </button>
-                    <button type="button" class="btn btn-success">
-                        <a id="white" href="signup.html">Sign Up</a>
-                    </button>
-                </form>
+                            >Twitter</a
+                        >
+                    </div>
+                </li>
+            </ul>
+        
+                <button id="signIn" type="button" class="btn btn-primary">
+                    <a id="white" href="login.html">Sign In</a>
+                </button>
+                <button id="signUp" type="button" class="btn btn-success">
+                    <a id="white" href="signup.html">Sign Up</a>
+                </button>
+          
+        </div>
+    </nav>
+</div>
+    <!-- Jumbotron -->
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
+        <div id="container-jumbotron" class="container">
+            <div id="text-jumbotron">
+                <h1 style="color: rgb(252, 252, 252);" class="display-4">Booking Villa</h1>
+                <p style="color: rgb(252, 252, 252);" class="lead">Sewa villa senyaman rumah Nenek!</p>
             </div>
-        </nav>
-    </div>
-        <!-- Jumbotron -->
-        <div id="jumbotron" class="jumbotron jumbotron-fluid">
-            <div id="container-jumbotron" class="container">
-                <div id="text-jumbotron">
-                    <h1 style="color: rgb(252, 252, 252);" class="display-4">Booking Villa</h1>
-                    <p style="color: rgb(252, 252, 252);" class="lead">Sewa villa senyaman rumah Nenek!</p>
-                </div>
-                <!-- form -->
-                <div id="two-jumbotron">
-                    <!-- <div id="container-form-search" class="container">
-                        <form id="searching">
-                            <legend>Pencarian:</legend>
-                            <label for="loc">
-                                Nama Lokasi/Villa Tujuan
-                            </label>
-                            <div id="loc" class="input-group flex-nowrap">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text"
-                                        id="addon-wrapping"
-                                    >
-                                        <i
-                                            class="fa fa-map-marker"
+            <!-- form -->
+            <div id="two-jumbotron">
+                <div id="container-form-search" class="container">
+                    <form id="searching">
+                        <legend>Pencarian:</legend>
+                        <label for="loc">
+                            Nama Lokasi/Villa Tujuan
+                        </label>
+                        <div id="loc" class="input-group flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span
+                                    class="input-group-text"
+                                    id="addon-wrapping"
+                                >
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Villa Nenek"
+                                aria-label="Username"
+                                aria-describedby="addon-wrapping"
+                            />
+                        </div>
+                        <div class="two-slide">
+                            <div class="form-group">
+                                <label for="sel1"
+                                    ><span
+                                        ><i
+                                            class="fa fa-users"
                                             aria-hidden="true"
                                         ></i
                                     ></span>
-                                </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="Villa Nenek"
-                                    aria-label="Username"
-                                    aria-describedby="addon-wrapping"
-                                />
-                            </div>
-                            <div class="two-slide"> -->
-                                <!-- <div class="form-group">
-                                    <label for="sel1"
-                                        ><span
-                                            ><i
-                                                class="fa fa-users"
-                                                aria-hidden="true"
-                                            ></i
-                                        ></span>
-                                        Jumlah Tamu:
-                                    </label>
-                                    <select class="form-control" id="sel1">
-                                        <option>1 Tamu</option>
-                                        <option>2 Tamu</option>
-                                        <option>3 Tamu</option>
-                                        <option>4 Tamu</option>
-                                        <option>5 Tamu</option>
-                                        <option>6 Tamu</option>
-                                        <option>7 Tamu</option>
-                                        <option>8 Tamu</option>
-                                        <option>9 Tamu</option>
-                                        <option>10 Tamu</option>
-                                        <option>11 Tamu</option>
-                                        <option>12 Tamu</option>
-                                        <option>13 Tamu</option>
-                                        <option>14 Tamu</option>
-                                        <option>15 Tamu</option>
-                                        <option>16 Tamu</option>
+                                    Jumlah Tamu:
+                                </label>
+                                <select class="form-control" id="sel1">
+                                    <option>1 Tamu</option>
+                                    <option>2 Tamu</option>
+                                    <option>3 Tamu</option>
+                                    <option>4 Tamu</option>
+                                    <option>5 Tamu</option>
+                                    <option>6 Tamu</option>
+                                    <option>7 Tamu</option>
+                                    <option>8 Tamu</option>
+                                    <option>9 Tamu</option>
+                                    <option>10 Tamu</option>
+                                    <option>11 Tamu</option>
+                                    <option>12 Tamu</option>
+                                    <option>13 Tamu</option>
+                                    <option>14 Tamu</option>
+                                    <option>15 Tamu</option>
+                                    <option>16 Tamu</option>
                                     </select>
                                 </div>
-                                section2 -->
-                                <!-- <div class="form-group">
+                                <!-- section2 -->
+                                <div class="form-group">
                                     <label for="sel2"
                                         ><span
                                             ><i
@@ -188,8 +188,8 @@
                                             ></i>
                                         </span>
                                         Jumlah Kamar:</label
-                                    > -->
-                                    <!-- <select class="form-control" id="sel2">
+                                    >
+                                    <select class="form-control" id="sel2">
                                         <option>1 Kamar</option>
                                         <option>2 Kamar</option>
                                         <option>3 Kamar</option>
@@ -207,9 +207,9 @@
                                         <option>15 Kamar</option>
                                     </select>
                                 </div>
-                            </div> -->
+                            </div>
                             <!-- section3 -->
-                            <!-- <a
+                            <a
                                 id="btn-transparant"
                                 class="btn btn-primary btn-lg active"
                                 role="button"
@@ -223,7 +223,7 @@
                             >
                         </form>
                     </div>
-                </div> -->
+                </div>
                 <!-- search batas -->
             </div>
         </div>
@@ -261,101 +261,101 @@
                                 src="/assets/img/bg1.jpg"
                                 class="d-block w-100"
                                 alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Villa Ubud</h5>
-                                <p>
-                                    Nulla vitae elit libero, a pharetra augue
-                                    mollis interdum.
-                                </p>
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Villa Ubud</h5>
+                                    <p>
+                                        Nulla vitae elit libero, a pharetra augue
+                                        mollis interdum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="/assets/img/bg3.jpg"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Villa Griya Kusuma</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="./assets/img/bg1.jpg"
+                                    class="d-block w-100"
+                                    alt="..."
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ubud cluster</h5>
+                                    <p>
+                                        Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/img/bg3.jpg"
-                                class="d-block w-100"
-                                alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Villa Griya Kusuma</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="./assets/img/bg1.jpg"
-                                class="d-block w-100"
-                                alt="..."
-                            />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Ubud cluster</h5>
-                                <p>
-                                    Praesent commodo cursus magna, vel
-                                    scelerisque nisl consectetur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <a
-                        class="carousel-control-prev"
-                        href="#carouselExampleCaptions"
-                        role="button"
-                        data-slide="prev"
-                    >
-                        <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                        class="carousel-control-next"
-                        href="#carouselExampleCaptions"
-                        role="button"
-                        data-slide="next"
-                    >
-                        <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                        ></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Section 2 -->
-        <section data-aos="fade-right" class="section-2 container">
-            <div class="text-section-2">
-                <h2>Daftar Layanan</h2>
-                <p>
-                    Kami menyediakan layanan tambahan sesuai kebutuhan pelanggan
-                </p>
-            </div>
-            <div id="card-group" class="card-group">
-                <div class="card">
-                    <img
-                        src="./assets/img/profesional.jpg"
-                        class="card-img-top"
-                        alt="ART"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">Cleaning Service</h5>
-                        <p class="card-text">
-                            Kami menyediakan cleaning Service profesional dan
-                            juga Babysitter. Untuk kenyamanan liburan anda.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"
-                            >Last updated 3 mins ago</small
+                        <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleCaptions"
+                            role="button"
+                            data-slide="prev"
                         >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a
+                            class="carousel-control-next"
+                            href="#carouselExampleCaptions"
+                            role="button"
+                            data-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-                <div class="card">
-                    <img
+            </section>
+            <!-- Section 2 -->
+            <section data-aos="fade-right" class="section-2 container">
+                <div class="text-section-2">
+                    <h2>Daftar Layanan</h2>
+                    <p>
+                        Kami menyediakan layanan tambahan sesuai kebutuhan pelanggan
+                    </p>
+                </div>
+                <div id="card-group" class="card-group">
+                    <div class="card">
+                        <img
+                            src="./assets/img/profesional.jpg"
+                            class="card-img-top"
+                            alt="ART"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Cleaning Service</h5>
+                            <p class="card-text">
+                                Kami menyediakan cleaning Service profesional dan
+                                juga Babysitter. Untuk kenyamanan liburan anda.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"
+                                >Last updated 3 mins ago</small
+                            >
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
                         src="./assets/img/delman.jpg"
                         class="card-img-top"
                         alt="Delman"
@@ -520,105 +520,103 @@
                 <button id="button-group" type="button" class="btn btn-primary">
                     <a id="white" href="./signup.html"
                         >Daftar Mitra group</a
-                    >
-                </button>
-                <button id="button-individu" type="button" class="btn btn-success">
-                    <a id="white" href="signup.html">Daftar mitra Individu</a>
-                </button>
-            </form>
-        </section>
-        <!-- Footer -->
-
-        <footer class="footer-distributed">
-            <div class="footer-left">
-                <h3>&lt Rumah<span>Nenek</span>/&gt</h3>
-
-                <p class="footer-links">
-                    <a href="#">Home -</a>
-
-                    <a href="#">About -</a>
-
-                    <a href="#">Product -</a>
-
-                    <a href="#">Contact</a>
-                </p>
-
-                <p class="footer-company-name">
-                    RumahNenek &copy; 2020, Impact Byte
-                </p>
-            </div>
-
-            <div class="footer-center">
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p>
-                        <span>28 Ujung Harapan Street</span> Bekasi, Indonesia
-                    </p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+62 999 1148563</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p>
-                        <a href="mailto:support@company.com"
-                            >contact@rumahNenek.com</a
-                        >
-                    </p>
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <p class="footer-company-about">
-                    <span>About the company</span>
-                    RumahNenek.com merupakan bagian dari Booking Santuy Inc.,
-                    perusahaan terkemuka di dunia untuk Booking villa online
-                    anda &amp; layanan terkait lainnya.
-                </p>
-
-                <div class="footer-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
-                </div>
-            </div>
-        </footer>
+                    ></button>
+                    <button id="button-individu" type="button" class="btn btn-success">
+                        <a id="white" href="signup.html">Daftar mitra Individu</a>
+                    </button>
+                </form>
+            </section>
+            <!-- Footer -->
     
-        <script src="./js/index.js"></script>
-        <!-- Footer -->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!-- aos js -->
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <h3>&lt Rumah<span>Nenek</span>/&gt</h3>
+    
+                    <p class="footer-links">
+                        <a href="#">Home -</a>
+    
+                        <a href="#">About -</a>
+    
+                        <a href="#">Product -</a>
+    
+                        <a href="#">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">
+                        RumahNenek &copy; 2020, Impact Byte
+                    </p>
+                </div>
+    
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>28 Ujung Harapan Street</span> Bekasi, Indonesia
+                        </p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+62 999 1148563</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p>
+                            <a href="mailto:support@company.com"
+                                >contact@rumahNenek.com</a
+                            >
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        RumahNenek.com merupakan bagian dari Booking Santuy Inc.,
+                        perusahaan terkemuka di dunia untuk Booking villa online
+                        anda &amp; layanan terkait lainnya.
+                    </p>
+    
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </footer>
         
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-        
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1300,
-            });
-        </script>
-        <!-- bootstrap -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-        <script src="./js/login.js"></script>
-        
-    </body>
-</html>
+            <script src="./js/index.js"></script>
+            <!-- Footer -->
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <!-- aos js -->
+            <script src="welcome.js"></script>
+            
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1300,
+                });
+            </script>
+            <!-- bootstrap -->
+            <script
+                src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"
+            ></script>
+            <script src="./js/login.js"></script>
+            
+        </body>
+    </html>
