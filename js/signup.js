@@ -14,7 +14,7 @@ async function postData() {
     try {
         let fullName = document.querySelector("#name").value;
         let email = document.querySelector("#email").value;
-        let password = document.querySelector("#password").value;
+        let passWord = document.querySelector("#password").value;
 
         if (email.length === 0) {
             Swal.fire({
@@ -41,7 +41,7 @@ async function postData() {
             let users = {
                 fullName,
                 email,
-                password,
+                passWord,
             };
 
             let url = "https://5ef168f21faf160016b4d5c9.mockapi.io/api/users";
