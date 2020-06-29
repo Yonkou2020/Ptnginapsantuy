@@ -47,7 +47,7 @@ async function getData() {
                     confirmButtonText: "Continue",
                 });
                 setTimeout(function () {
-                    location.replace("./index.html");
+                    location.replace("./fitrucheckout1.html");
                 }, 4000);
             } else if (
                 (registeredUsers.length > 0 &&
